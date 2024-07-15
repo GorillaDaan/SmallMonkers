@@ -56,16 +56,16 @@ namespace GorillaTagModTemplateProject
 		[ModdedGamemodeJoin]
 		public void OnJoin(string gamemode)
 		{
-            SmallMonkers();
-            inRoom = true;
+            		SmallMonkers();
+            		inRoom = true;
 		}
 
 		/* This attribute tells Utilla to call this method when a modded room is left */
 		[ModdedGamemodeLeave]
 		public void OnLeave(string gamemode)
 		{
-            GorillaLocomotion.Player.Instance.scale = 1;
-            inRoom = false;
+            		GorillaLocomotion.Player.Instance.scale = 1;
+            		inRoom = false;
 		}
 
 		public void SmallMonkers()
